@@ -2,7 +2,6 @@
     /*background: linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 255, 255, 0) 100%);*/
     background: red !important;
 }
-
 ion-content{
     --ion-background-color:linear-gradient(180deg, #FFFFFF 20%, #E3E3E3 100%);;
 }
@@ -49,4 +48,17 @@ ion-content{
 }
 .hero-image img{
   max-width: 80%;
+}
+.app-modules-container{
+  margin: 20px;
+}
+.brand-button-black{
+background: #282828;
+padding: 20px;
+width: 100%;
+color: #fff;
+border-radius: 5px;
+}
+.app-module {
+  margin-bottom: 20px;
 }

@@ -13,6 +13,14 @@
           <div class="hero-image">
             <img src="/assets/hero-image.svg"  alt="Handy Help Logo">
           </div>
+          <div class="app-modules-container">
+            <div class="app-module">
+              <button class="brand-button-black">TNEB POWER CALCULATOR</button>
+            </div>
+                <div class="app-module">
+              <button class="brand-button-black">MILAGE CALCULATOR</button>
+            </div>
+          </div>
       </ion-content>
     </ion-content>
   </ion-page>
