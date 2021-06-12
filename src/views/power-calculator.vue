@@ -16,12 +16,11 @@
         <div class="result-label">Electricity Duty</div>
         <div class="result-value">{{ dutyCharges }}</div>
         <div class="result-label null-style">Total Payable</div>
-        <div class="result-value null-style">{{ Math.round(result) }}</div>
+        <div class="result-value null-style">{{ Math.round(result) }}</div>
       </div>
     </ion-card-content>
   </ion-page>
 </template>
-
 <script lang="ts">
 import {
   IonPage,
@@ -66,7 +65,6 @@ export default defineComponent({
       this.showResult = true;
     },
     calaculate200() {
-      console.log("calaculate200");
       this.fixedCharges = 20;
       this.dutyCharges = this.units / 10;
       if (this.units > 100) {
@@ -75,7 +73,6 @@ export default defineComponent({
       }
     },
     calculate500() {
-      console.log("calculate300");
       let result1 = 0,
         result2 = 0;
       this.fixedCharges = 30;
@@ -87,7 +84,6 @@ export default defineComponent({
       this.result = result1 + result2 + this.fixedCharges + this.dutyCharges;
     },
     calculate500more() {
-      console.log("calculate500");
       let result1 = 0,
         result2 = 0,
         result3 = 0;
