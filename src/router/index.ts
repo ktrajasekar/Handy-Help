@@ -2,13 +2,18 @@
 
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-// import Tabs from '../views/Tabs.vue'
+import Dashboard  from '../views/Dashboard.vue'
 import PowerCalculator from '../views/power-calculator.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+    {
+    path: '/power-calculator',
     name: 'Home',
     component: PowerCalculator
   },

@@ -1,3 +1,12 @@
+.handy-help__bg {
+    /*background: linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 255, 255, 0) 100%);*/
+    background: red !important;
+}
+
+ion-content{
+    --ion-background-color:linear-gradient(180deg, #FFFFFF 20%, #E3E3E3 100%);;
+}
+
 .power-calculator__calculate {
   margin: 30px;
 }
@@ -26,4 +35,18 @@
 
 .null-style{
   border: 0;
+}
+.handy-help-logo {
+  text-align: center;
+  padding: 20px
+}
+.handy-help-logo img{
+  max-width: 70%;
+}
+.hero-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero-image img{
+  max-width: 80%;
 }

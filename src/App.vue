@@ -1,11 +1,6 @@
 <template>
   <IonApp>
     <ion-menu side="start" menu-id="first" content-id="main">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Start Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
       <ion-content>
         <ion-list>
           <ion-item>Menu Item</ion-item>
@@ -16,7 +11,7 @@
         </ion-list>
       </ion-content>
     </ion-menu>
-    <ion-header>
+<!--     <ion-header>
       <ion-toolbar>
         <ion-row>
           <ion-col size="2" class="centering-block">
@@ -31,8 +26,12 @@
           </ion-col>
         </ion-row>
       </ion-toolbar>
-    </ion-header>
-    <ion-content class="has-header">
+    </ion-header> 
+  IonHeader,
+  IonMenuButton
+   IonRow,
+  -->
+    <ion-content class="has-header handy-help__bg" >
       <ion-router-outlet id="main"> </ion-router-outlet>
     </ion-content>
   </IonApp>
@@ -43,18 +42,10 @@ import {
   IonApp,
   IonRouterOutlet,
   menuController,
-  IonTitle,
-  IonToolbar,
-  IonHeader,
   IonItem,
   IonList,
   IonContent,
-  IonMenu,
-  IonMenuButton,
-  IonButtons,
-  IonRow,
-  IonCol,
-  IonIcon,
+  IonMenu
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { power } from "ionicons/icons";
@@ -69,18 +60,10 @@ export default defineComponent({
   components: {
     IonApp,
     IonRouterOutlet,
-    IonTitle,
-    IonToolbar,
-    IonHeader,
     IonItem,
     IonContent,
-    IonMenu,
-    IonMenuButton,
     IonList,
-    IonRow,
-    IonCol,
-    IonIcon,
-    IonButtons,
+    IonMenu
   },
   methods: {
     openFirst() {
