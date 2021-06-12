@@ -30,7 +30,7 @@ import {
   IonInput,
   IonLabel,
   IonButton,
-} from "@ionic/vue";// import { calculator } from "node_modules/ionicons/icons";
+} from "@ionic/vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   components: {
