@@ -1,0 +1,29 @@
+.power-calculator__calculate {
+  margin: 30px;
+}
+
+.centering-block {
+  display: flex;
+  justify-content: center;
+}
+
+.result-view {
+  display: grid;
+  grid-template-columns: 80% auto;
+  background: #ddd;
+  padding: 10px;
+  border-bottom: #fff 2px solid;
+}
+.result-value {
+  text-align: right;
+}
+
+.result-label,
+.result-value {
+  border-bottom: #eee 1px solid;
+  padding: 10px;
+}
+
+.null-style{
+  border: 0;
+}
