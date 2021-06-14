@@ -1,13 +1,28 @@
-.handy-help__bg {
-    /*background: linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 255, 255, 0) 100%);*/
-    background: red !important;
+@font-face {   
+  font-family: 'Montserrat';    
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
 }
-ion-content{
-    --ion-background-color:linear-gradient(180deg, #FFFFFF 20%, #E3E3E3 100%);;
+
+@font-face {   
+  font-family: 'MontserratSemiBold';    
+  src: url('../assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+ion-content.handy-help__bg {
+    --ion-background-color:linear-gradient(180deg, #FFFFFF 20%, #E3E3E3 100%);
+}
+
+ion-content {
+  font-family: var(--default-brand-font) !important;
+}
+
+:root {
+ --default-brand-font: 'Montserrat';
+--default-brand-bold-font: 'MontserratSemiBold';
 }
 
 .power-calculator__calculate {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .centering-block {
@@ -20,7 +35,6 @@ ion-content{
   grid-template-columns: 80% auto;
   background: #ddd;
   padding: 10px;
-  border-bottom: #fff 2px solid;
 }
 .result-value {
   text-align: right;
@@ -36,15 +50,14 @@ ion-content{
   border: 0;
 }
 .handy-help-logo {
-  text-align: center;
-  padding: 20px
+  padding: 10px 0;
 }
 .handy-help-logo img{
   max-width: 70%;
 }
 .hero-image {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .hero-image img{
   max-width: 80%;
@@ -58,6 +71,8 @@ padding: 20px;
 width: 100%;
 color: #fff;
 border-radius: 5px;
+font-family: var(--default-brand-bold-font);
+letter-spacing: 1px;
 }
 .app-module {
   margin-bottom: 20px;

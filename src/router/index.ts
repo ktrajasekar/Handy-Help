@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import Dashboard  from '../views/Dashboard.vue'
 import PowerCalculator from '../views/power-calculator.vue'
-
+import mileageCalculator from '../views/mileage-calculator.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: PowerCalculator
   },
+ {
+    path: '/mileage-calculator',
+    name: 'Mileage Calculator',
+    component: mileageCalculator
+  }
   // {
   //   path: '/tabs/',
   //   component: Tabs,

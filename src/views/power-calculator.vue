@@ -6,9 +6,7 @@
         <ion-input v-model="units"></ion-input>
       </ion-item>
       <div class="power-calculator__calculate">
-        <ion-button expand="full" v-on:click="calculateUnits"
-          >Calculate</ion-button
-        >
+         <button class="brand-button-black"  v-on:click="calculateUnits">CALCULATE</button>
       </div>
       <div class="result-view" v-if="showResult">
         <div class="result-label">Fixed Charges</div>
@@ -27,8 +25,7 @@ import {
   IonCardContent,
   IonItem,
   IonInput,
-  IonLabel,
-  IonButton,
+  IonLabel
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 export default defineComponent({
@@ -37,8 +34,7 @@ export default defineComponent({
     IonCardContent,
     IonItem,
     IonInput,
-    IonLabel,
-    IonButton,
+    IonLabel
   },
   data() {
     return {
