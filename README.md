@@ -1,5 +1,8 @@
 # Handy Help ( Week End Project)
 
+## CI & CD using vercel
+[https://handy-help.vercel.app/](handy-help.vercel.app)
+
 ## Installation
 
 > Note: It's highly recommended to follow along with the [tutorial guide](https://ionicframework.com/docs/vue/your-first-app), which goes into more depth, but this is the fastest way to run the app. 
