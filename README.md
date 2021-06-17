@@ -1,6 +1,6 @@
-# Power Calculator ( Week End Project)
+# Handy Help ( Week End Project)
 
-## How to Run
+## Installation
 
 > Note: It's highly recommended to follow along with the [tutorial guide](https://ionicframework.com/docs/vue/your-first-app), which goes into more depth, but this is the fastest way to run the app. 
 
@@ -11,9 +11,25 @@
 4) Run on the web: `ionic serve`.
 5) Run on iOS or Android: See [here](https://ionicframework.com/docs/building/running).
 
-
 ## Run project in android
 
-ionic capacitor run
+```bash
+ionic build
 npx cap copy
 npx cap open android
+```
+## UX Design 
+[FIGMA LINK](https://www.figma.com/file/edzZnFP15ELaMUqzawfa9x/handy-help)
+
+## APP Screenshot
+![Screenshots](https://live.staticflickr.com/65535/51252270371_351b4e83aa_o.jpg "Title")
+
+## APK Build
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Credits
+
+[Markdown](https://www.makeareadme.com/)

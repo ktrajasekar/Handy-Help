@@ -1,24 +1,29 @@
-@font-face {   
-  font-family: 'Montserrat';    
-  src: url('../assets/fonts/Montserrat-Regular.ttf');
+:root {
+  --default-brand-font: "Montserrat";
+  --default-brand-bold-font: "MontserratSemiBold";
+  --ion-font-family: "Montserrat";
 }
 
-@font-face {   
-  font-family: 'MontserratSemiBold';    
-  src: url('../assets/fonts/Montserrat-SemiBold.ttf');
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
 }
 
 ion-content.handy-help__bg {
-    --ion-background-color:linear-gradient(180deg, #FFFFFF 20%, #E3E3E3 100%);
+  --ion-background-color: linear-gradient(180deg, #ffffff 20%, #e3e3e3 100%);
 }
 
 ion-content {
   font-family: var(--default-brand-font) !important;
 }
 
-:root {
- --default-brand-font: 'Montserrat';
---default-brand-bold-font: 'MontserratSemiBold';
+ion-item {
+  --ion-background-color: transparent;
 }
 
 .power-calculator__calculate {
@@ -36,6 +41,7 @@ ion-content {
   background: #ddd;
   padding: 10px;
 }
+
 .result-value {
   text-align: right;
 }
@@ -46,34 +52,67 @@ ion-content {
   padding: 10px;
 }
 
-.null-style{
+.null-style {
   border: 0;
 }
+
 .handy-help-logo {
   padding: 10px 0;
 }
-.handy-help-logo img{
+
+.handy-help-logo img {
   max-width: 70%;
 }
+
 .hero-image {
   text-align: center;
   margin: 30px 0;
 }
-.hero-image img{
+
+.hero-image img {
   max-width: 80%;
 }
-.app-modules-container{
+
+.app-modules-container {
   margin: 20px;
 }
-.brand-button-black{
-background: #282828;
-padding: 20px;
-width: 100%;
-color: #fff;
-border-radius: 5px;
-font-family: var(--default-brand-bold-font);
-letter-spacing: 1px;
+
+.brand-button-black {
+  background: #282828;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  font-family: var(--default-brand-bold-font);
+  letter-spacing: 1px;
 }
+
 .app-module {
   margin-bottom: 20px;
+}
+
+.side-menu-logo {
+  text-align: center;
+  max-width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.version-text {
+  font-size: 12px;
+  position: fixed;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.milage-calc-result {
+  text-align: center;
+  margin: 20px;
+  font-family: var(--default-brand-bold-font);
+  font-size: 20px !important;
+  letter-spacing: 2px;
 }

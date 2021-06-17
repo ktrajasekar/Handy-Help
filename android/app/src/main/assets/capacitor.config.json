@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.demo.pg.vue",
-  "appName": "TNEB Power Calculator",
+  "appName": "Handy Help",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",

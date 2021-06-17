@@ -3,10 +3,12 @@
     <ion-card-content class="power-calculator">
       <ion-item>
         <ion-label position="stacked">Units Consumed</ion-label>
-        <ion-input v-model="units"></ion-input>
+        <ion-input type="number" v-model="units"></ion-input>
       </ion-item>
       <div class="power-calculator__calculate">
-         <button class="brand-button-black"  v-on:click="calculateUnits">CALCULATE</button>
+        <button class="brand-button-black" v-on:click="calculateUnits">
+          CALCULATE
+        </button>
       </div>
       <div class="result-view" v-if="showResult">
         <div class="result-label">Fixed Charges</div>
@@ -25,7 +27,8 @@ import {
   IonCardContent,
   IonItem,
   IonInput,
-  IonLabel
+  IonLabel,
+  toastController,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 export default defineComponent({
@@ -34,7 +37,7 @@ export default defineComponent({
     IonCardContent,
     IonItem,
     IonInput,
-    IonLabel
+    IonLabel,
   },
   data() {
     return {
@@ -43,11 +46,24 @@ export default defineComponent({
       showResult: false,
       fixedCharges: 0,
       dutyCharges: 0,
-      data: null,
     };
   },
   methods: {
+    async openToast() {
+      const toast = await toastController.create({
+        message: "Check Unit Value",
+        duration: 10000,
+        position: "top",
+        color: "danger",
+        animated: true,
+      });
+      return toast.present();
+    },
     calculateUnits() {
+      if (this.units === 0 || this.units == Number("")) {
+        this.openToast();
+        return false;
+      }
       this.result = 0;
       if (this.units <= 100) {
         this.result = 0;
