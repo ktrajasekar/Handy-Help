@@ -36,3 +36,4 @@ npx cap open android
 ## Credits
 
 [Markdown](https://www.makeareadme.com/)
+[Hosting provider](https://vercel.com)
