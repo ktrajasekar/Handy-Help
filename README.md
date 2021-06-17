@@ -28,7 +28,7 @@ npx cap open android
 ![Screenshots](https://live.staticflickr.com/65535/51252270371_351b4e83aa_o.jpg "Title")
 
 ## APK Build
-
+[APK V1](https://github.com/ktrajasekar/Handy-Help/blob/master/apk/app-v1.apk)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
