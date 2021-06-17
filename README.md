@@ -1,7 +1,7 @@
 # Handy Help ( Week End Project)
 
 ## CI & CD using vercel
-[https://handy-help.vercel.app](handy-help.vercel.app)
+[https://handy-help.vercel.app](https://handy-help.vercel.app)
 
 ## Installation
 
