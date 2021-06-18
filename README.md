@@ -35,5 +35,6 @@ npx cap open android
 
 ## Credits
 
-[Markdown](https://www.makeareadme.com/)
-[Hosting provider](https://vercel.com)
+- [Markdown](https://www.makeareadme.com/)
+- [Hosting provider](https://vercel.com)
+- [CORS Resolver](https://github.com/Freeboard/thingproxy)

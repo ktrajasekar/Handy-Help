@@ -2,6 +2,7 @@
   --default-brand-font: "Montserrat";
   --default-brand-bold-font: "MontserratSemiBold";
   --ion-font-family: "Montserrat";
+  --brand-black: #000000;
 }
 
 @font-face {
@@ -40,6 +41,10 @@ ion-item {
   grid-template-columns: 80% auto;
   background: #ddd;
   padding: 10px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .result-value {
@@ -115,4 +120,25 @@ ion-item {
   font-family: var(--default-brand-bold-font);
   font-size: 20px !important;
   letter-spacing: 2px;
+}
+.rss-feeds {
+  margin:20px 0 0 20px;
+  padding: 0;
+}
+.rss-feeds li {
+  margin-bottom: 7px;
+  color: var(--brand-black);
+}
+
+.rss-feeds li a{
+  color: var(--brand-black);
+  text-decoration: none;
+}
+
+.news-feeds h2{
+  font-family: var(--default-brand-bold-font);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: #000000 1px dashed;
+  padding-bottom: 2px;
 }

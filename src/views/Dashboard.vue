@@ -12,6 +12,9 @@
                 <div class="app-module">
               <button class="brand-button-black" v-on:click="() => router.push('/mileage-calculator')" >MILAGE CALCULATOR</button>
             </div>
+                        <div class="app-module">
+              <button class="brand-button-black" v-on:click="() => router.push('/news-feed')" >NEWS FEED</button>
+            </div>
           </div>
       </ion-content>
     </ion-content>

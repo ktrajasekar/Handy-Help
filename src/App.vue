@@ -12,7 +12,9 @@
           <ion-item v-on:click="gotoPage('/power-calculator')"
             >TNEB Power Calculator</ion-item
           >
-          <ion-item v-on:click="gotoPage('/mileage-calculator')">Mileage Calculator</ion-item>
+          <ion-item v-on:click="gotoPage('/mileage-calculator')"
+            >Mileage Calculator</ion-item
+          >
           <ion-item>News Feeds</ion-item>
         </ion-list>
         <p class="version-text">Version:1.0</p>
@@ -50,11 +52,17 @@ import {
   IonList,
   IonContent,
   IonMenu,
+  IonMenuButton,
+  IonButtons,
+  IonCol,
+  IonRow,
+  IonHeader,
+  IonToolbar,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { power } from "ionicons/icons";
 import { useRouter } from "vue-router";
-import { isPlatform  } from '@ionic/vue';
+import { isPlatform } from "@ionic/vue";
 
 export default defineComponent({
   name: "HandyHelp",
@@ -71,9 +79,19 @@ export default defineComponent({
     IonContent,
     IonList,
     IonMenu,
+    IonMenuButton,
+    IonButtons,
+    IonCol,
+    IonRow,
+    IonHeader,
+    IonToolbar,
   },
-  created(){
-    console.log('%c Oh my heavens! ', 'background: green; color: #bada55', isPlatform('ios'));
+  created() {
+    console.log(
+      "%c Oh my heavens! ",
+      "background: green; color: #bada55",
+      isPlatform("ios")
+    );
   },
   methods: {
     openFirst() {
@@ -86,7 +104,7 @@ export default defineComponent({
     gotoPage(params: any) {
       this.$router.push(params);
       menuController.close("first");
-    }
+    },
   },
 });
 </script>
