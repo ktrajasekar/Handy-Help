@@ -88,7 +88,7 @@ export default defineComponent({
   },
   created() {
     console.log(
-      "%c Oh my heavens! ",
+      "%c Hi Arun! ",
       "background: green; color: #bada55",
       isPlatform("ios")
     );
